@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class DecodingTest {
     Decoding testDecoding = new Decoding(2, "GFYKP OWTKKVJK");
     @Test
-    @DisplayName("Decode Instatiates Correctly")
+    @DisplayName("Decode Instantiates Correctly")
     public void checkIfItCreatesInstance()
     {
         assertEquals(true, testDecoding instanceof Decoding);
@@ -23,4 +23,11 @@ public class DecodingTest {
     {
         assertEquals(2, testDecoding.getKey());
     }
+
+    @Test
+    public void isValidInputText()
+    {
+        assertEquals(true, testDecoding.isValidInputText());
+    }
+
 }
