@@ -1,5 +1,5 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-class EncodingTest {
+public class EncodingTest {
 
 }
