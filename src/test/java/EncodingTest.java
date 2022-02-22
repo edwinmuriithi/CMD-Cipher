@@ -9,5 +9,9 @@ public class EncodingTest {
     {
         assertEquals(true, testEncoding instanceof Encoding);
     }
-
+    @Test
+    public void checkIfSavesInputText()
+    {
+        assertEquals("EDWIN MURIITHI", testEncoding.getInputText());
+    }
 }
